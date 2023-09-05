@@ -3,21 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
 
-<div class ="alert-box" id="alert">
-    <p id="알림창">알림창임</p>
-<button id="close">닫기</button>
-</div>
-<button onclick="알림창열기('block','아이디입력하세요')">버튼1</button>
-<button onclick="알림창열기('block','비번 입력하세요')">버튼1</button>
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+        <span class="navbar-brand">Navbar</span>
+        <button class="navbar-toggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
 
+<ul class="list-group" id="test1">
+    <li class="list-group-item">An active item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">A fourth item</li>
+    <li class="list-group-item">And a fifth one</li>
+</ul>
+
+<script>
+    // document.getElementsByClassName('navbar-toggler')[0].addEventListener('click',function (){
+    //     document.getElementsByClassName('list-group')[0].classList.toggle('show');
+    // })
+    document.querySelectorAll('.navbar-toggler')[0].addEventListener('click',function (){
+        document.querySelector('.list-group').classList.toggle('show');
+    })
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script>
 
     document.getElementById('close').addEventListener('mouseover',function (){
-        document.getElementById('alert').style.display='none';
+
     });
 
 

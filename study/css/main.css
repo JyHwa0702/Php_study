@@ -12,3 +12,10 @@
 .alert-box p{
     display: inline;
 }
+
+.list-group{
+    display: none;
+}
+.show {
+    display: block;
+}
